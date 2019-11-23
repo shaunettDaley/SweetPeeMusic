@@ -64,13 +64,29 @@ ul#slider1 {
 
   }
 
+  .youtubeImage{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+  }
+
+  div#music{
+    background:url('https://media2.giphy.com/media/pyvDmuNTHFxF5wuNYP/source.gif');
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:#fff;
+  }
+
+  div#music h2, div#music h4 {
+    color: #fff;
+}
   /*#music{
 
     background:url('images/wallpaper.jpg') !important;
     background-repeat:no-repeat;
     background-size:cover;
   }*/
-  
+
   .logo-small {
     color: #f4511e;
     font-size: 50px;
@@ -132,6 +148,11 @@ ul#slider1 {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
+
+  .panel-heading h2 {
+    color: #000 !important;
+    font-weight: 900;
+}
   .panel-footer {
     background-color: white !important;
   }
@@ -147,6 +168,11 @@ ul#slider1 {
     background-color: #001E23;
     color: #fff;
   }
+
+  .panel-footer h4 {
+    color: #000 !important;
+    font-weight: 800;
+}
   .navbar {
     margin-bottom: 0;
     background-color: #001E23;
@@ -227,9 +253,35 @@ ul#slider1 {
       width: 100%;
       margin-bottom: 35px;
     }
+
+    .panel-footer .btn {
+      display: block;
+      width: 100%;
+  }
+
   }
   @media screen and (max-width: 480px) {
     .logo {
       font-size: 150px;
     }
+
+    .rslides img, .jumbotron , ul#slider1{
+        height:400px !important;
+        overflow:hidden !important;
+        max-height:400px !important;
+    }
+
+    .container-fluid {
+      padding: 9px 50px;
+  }
+
+  h2{
+    font-weight:21px !important;
+  }
+
+  .panel-heading h2 {
+    font-size: 20px;
+    color: #000 !important;
+    font-weight: 900;
+}
   }

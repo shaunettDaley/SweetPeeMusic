@@ -263,7 +263,13 @@ ul#slider1 {
 	opacity: 0;
 }
 
+a.popup-youtube {
+  color: #fff;
+}
 
+a.popup-youtube:hover {
+  color: #000;
+}
 
   @media screen and (max-width: 1366px){
     .jumbotron {

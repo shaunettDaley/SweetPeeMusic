@@ -271,6 +271,15 @@ a.popup-youtube:hover {
   color: #000;
 }
 
+.thumbnail img {
+  width: 420px !important;
+  height: 420px !important;
+  max-height: 420px;
+  max-width: 420px;
+  max-width: 420px;
+  overflow: hidden !important;
+}
+
   @media screen and (max-width: 1366px){
     .jumbotron {
             height: 658px !important; /*657px;*/
@@ -322,6 +331,14 @@ a.popup-youtube:hover {
     font-size: 20px;
     color: #000 !important;
     font-weight: 900;
+}
+
+.thumbnail img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden !important;
 }
 
   }

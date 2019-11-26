@@ -225,34 +225,48 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center bg-grey popup-gallery">
   <h2>Gallery</h2><br>
-  <h4>What we have created</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+          <a href="images/website_header.jpg"><img src="images/website_header.jpg" width="75" height="75" alt="New York" width="400" height="300"></a>
+        
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+        <a href="images/sweet_Pee_Music_1.jpg"><img src="images/sweet_Pee_Music_1.jpg" width="75" height="75" alt="New York" width="400" height="300"></a>
+        
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours
-           
-        </p>
+          <a href="images/sweet_Pee_Music_2.jpg"><img src="images/sweet_Pee_Music_2.jpg" width="75" height="75" alt="New York" width="400" height="300"></a>
+        
       </div>
     </div>
   </div>
+  <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="images/sweet_Pee_Music_3.jpg"><img src="images/sweet_Pee_Music_3.jpg" width="75" height="75" alt="New York" width="400" height="300"></a>
+          
+        </div>
+      </div>
+      <!--<div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="images/sweet_Pee_Music_1.jpg"><img src="images/sweet_Pee_Music_1.jpg" width="75" height="75" alt="New York" width="400" height="300"></a>
+          
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="images/sweet_Pee_Music_2.jpg"><img src="images/sweet_Pee_Music_2.jpg" width="75" height="75" alt="New York" width="400" height="300"></a>
+          
+        </div>
+      </div>-->
+    </div>
 </div>
 
 <!--book now-->
@@ -352,6 +366,28 @@ $(document).ready(function(){
 		preloader: false,
 
 		fixedContentPos: false
+	});
+});
+
+
+
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">Sweet Pee </a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>&nbsp;</small>';
+			}
+		}
 	});
 });
 </script>

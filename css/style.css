@@ -1,3 +1,33 @@
+.fab, .fas , .far{
+  color:teal;
+  font-size:38px;
+  padding:15px;
+}
+
+.webmaster{
+  font-size:12px;
+  color:#fe8;
+}
+
+.webmaster a{
+  color:#fe8;
+}
+
+footer.container-fluid.text-center {
+  padding: 20px 20px;
+}
+
+.btn-floating{
+  width:153px !important;
+  border-radius:0px !important;
+}
+
+.bookNow {
+  background: #008080;
+  color: #fff;
+  font-weight: 900;
+  box-shadow: 4px 4px 4px #000;
+}
 
 span.firstLetter {
   font-size: 34px;
@@ -31,15 +61,20 @@ ul#slider1 {
     line-height: 1.8;
     color: #818181;
   }
+
+  nav ul a{
+    font-size:12px !important;
+  }
+
   h2 {
-    font-size: 24px;
+    font-size: 24px !important;
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
   }
   h4 {
-    font-size: 19px;
+    font-size: 19px !important;
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
@@ -307,6 +342,16 @@ a.popup-youtube:hover {
       width: 100%;
   }
 
+  }
+
+  @media screen and (max-width:670px){
+    .fab, .fas, .far{
+      font-size:26px;
+    }
+    
+    h2{
+      font-size:18px !important;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
